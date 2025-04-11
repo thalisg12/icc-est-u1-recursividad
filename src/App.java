@@ -8,6 +8,14 @@ public class App {
         int suma = e.sumaConsecutivos(5);
         System.out.println("Suma de los primeros 5 números: " + suma);
 
+        int potencia = e.getPotencia(fibonacci, suma);
+        System.out.println("Potencia de " + fibonacci + " elevado a " + suma + ": " + potencia);
+
+        int numero = 15;
+        int dig = e.sumaDigitos(numero);
+
+        System.out.println("La suma de los dígitos de " + numero + " es: " + dig);
+
     }
 
 }
