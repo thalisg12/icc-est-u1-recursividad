@@ -29,18 +29,15 @@ public class EjerciciosRecursivo {
     }
     /*
      * Si el numero es menor que 10, lo cual significa que solo tiene un digito, se
-     * devuelve
-     * el numero mismo. En caso contrario, se extrae el ultimo digito utilizando el
-     * operador
-     * modulo % y se calcula los digitos menos el ultimo utilizando la division
-     * entera /10.
+     * devuelve el numero mismo.
+     * En caso contrario, se extrae el ultimo digito utilizando el operador modulo %
+     * y se calcula los digitos menos el ultimo utilizando la division entera /10.
      * Luego, se realiza una llamada recursiva a sumaDigitos con el resto y se suma
-     * el ultimo
-     * digito.
+     * el ultimo digito.
      */
 
     public int sumaDigitos(int n) {
-        if (n < 10 && n >= 0) {
+        if (n < 10) {
             return n;
         }
         return (n % 10) + sumaDigitos(n / 10);
