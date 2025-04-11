@@ -16,6 +16,14 @@ public class App {
 
         System.out.println("La suma de los dígitos de " + numero + " es: " + dig);
 
+        int n = 5;
+        System.out.print("Números descendentes: ");
+        e.imprimirDescendente(n);
+
+        int nu = 1234;
+        System.out.print("Reverso: ");
+        e.imprimirReverso(nu);
+
     }
 
 }
